@@ -13,6 +13,6 @@ app.get('/hello', async () => {
   return transaction
 })
 
-app.listen({ port: env.PORT }).then(() => {
+app.listen({ port: Number(env.PORT) }).then(() => {
   console.log('Server listening on port 3333')
 })
